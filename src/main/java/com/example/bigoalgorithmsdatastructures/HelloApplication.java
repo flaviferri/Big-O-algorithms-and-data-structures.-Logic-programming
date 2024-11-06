@@ -49,7 +49,7 @@ public class HelloApplication extends Application {
             }
         }
     }
-
+// producto sin *
     int product(int a, int b) {
 
         int result = 0;
