@@ -18,7 +18,7 @@ public class HelloApplication extends Application {
 
         System.out.print("El array original es: ");
         for (int num : array) {
-            System.out.print(num + ", ");
+            System.out.print(num + ",");
         }
         System.out.println();
         for (int i = 0; i < array.length / 2; i++) {
@@ -29,7 +29,7 @@ public class HelloApplication extends Application {
         }
         System.out.print("El nuevo array es: ");
         for (int num : array) {
-            System.out.print(num + ", ");
+            System.out.print(num + ",");
 
         }
 
