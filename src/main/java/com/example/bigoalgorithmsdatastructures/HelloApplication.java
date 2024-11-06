@@ -32,11 +32,12 @@ public class HelloApplication extends Application {
             System.out.print(num + ",");
 
         }
-
-
+        System.out.println();
+        printUnorderedPairs(array);
     }
 
     // Método para imprimir parejas de manera desordenada
+    // Este método tiene una complejidad temporal de 𝑂 (𝑛 2)porque hay dos bucles anidados que recorren el array, generando todas las combinaciones posibles de parejas sin repetición.
     public void printUnorderedPairs(int[] array) {
         System.out.println("Parejas desordenadas:");
         for (int i = 0; i < array.length - 1; i++) {
