@@ -14,31 +14,34 @@ public class HelloApplication extends Application {
         //Complejidad temporal O(N)
         // Invertir un array
 
-        int[] array ={ 2,4,6,8,10};
+        int[] array = {2, 4, 6, 8, 10};
 
-        for ( int num :array){
-            System.out.println("El array original es "+ num);
+        System.out.print("El array original es: ");
+        for (int num : array) {
+            System.out.print(num + ", ");
         }
-        for (int i=0; i<array.length/2; i++){
+        System.out.println();
+        for (int i = 0; i < array.length / 2; i++) {
             int temp = array[i];
-            int reversePosition = array.length-1-i;
-            array[i]= array[reversePosition];
-            array[reversePosition]= temp;
+            int reversePosition = array.length - 1 - i;
+            array[i] = array[reversePosition];
+            array[reversePosition] = temp;
+        }
+        System.out.print("El nuevo array es: ");
+        for (int num : array) {
+            System.out.print(num + ", ");
+
         }
 
-        for(int num : array){
-            System.out.println("El nuevo array es "+ num);
-        }
 
+    }
 
-        }
-
-    // Imprimir parejas de manera desordenada
+    // Método para imprimir parejas de manera desordenada
     public void printUnorderedPairs(int[] array) {
-
+        System.out.println("Parejas desordenadas:");
         for (int i = 0; i < array.length - 1; i++) {
             for (int j = i + 1; j < array.length; j++) {
-                System.out.println(i + ", " + j);
+                System.out.println(array[i] + ", " + array[j]);
             }
         }
     }
