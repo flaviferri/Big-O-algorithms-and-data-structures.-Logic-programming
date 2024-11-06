@@ -32,8 +32,11 @@ public class HelloApplication extends Application {
             System.out.print(num + ",");
 
         }
-        System.out.println();
+
         printUnorderedPairs(array);
+        System.out.println("El resultado de la multiplicación es: " + product(4, 2));
+
+
     }
 
     // Método para imprimir parejas de manera desordenada
@@ -45,5 +48,14 @@ public class HelloApplication extends Application {
                 System.out.println(array[i] + ", " + array[j]);
             }
         }
+    }
+
+    int product(int a, int b) {
+
+        int result = 0;
+        for (int i = 0; i < b; i++) {
+            result += a;
+        }
+        return result;
     }
 }
